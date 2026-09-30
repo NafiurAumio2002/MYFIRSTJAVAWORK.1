@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class LibraryBooks {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter average number of books read per month (v): ");
+
+        double v = scanner.nextDouble();
+
+        System.out.print("Enter average number of visitors per year (n): ");
+
+        double n = scanner.nextDouble();
+
+        // Calculation: (Monthly books * 12 months) / Total annual visitors
+
+        double k = (v * 12.0) / n;
+
+        System.out.println("Average books read per year by one visitor (k): " + k);
+
+        scanner.close();
+
+    }
+
+}
